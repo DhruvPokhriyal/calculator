@@ -53,9 +53,12 @@ button {
     padding: 10px;
     font-size: 45px;
     display: flex;
-    /* float: left; */
-    width: 44px;
+    justify-content: flex-end;
+    /* float: right; */
+    width: 430px;
     /* align-items: flex-end; */
     /* text-align: right; */
-    /* border: 10px white dashed; */
+    border: 1px white dashed;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
