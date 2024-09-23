@@ -30,3 +30,23 @@ function operate(num1, num2, operator) {
             break;
     }
 }
+
+function showOperation(e) {
+    resultBox = document.querySelector(".numeric-result");
+    buttonClicked = e.target.textContent;
+    resultBox.textContent += buttonClicked;
+    // console.log(buttonClicked);
+}
+
+numberButtonList = Array.from(document.querySelectorAll(".numbers,.operator"));
+for (let button of numberButtonList) {
+    button.addEventListener("click", showOperation);
+}
+
+function allClear(e) {
+    resultBox = document.querySelector(".numeric-result");
+    resultBox.textContent = "";
+}
+
+const ac = document.querySelector(".clear");
+ac.addEventListener("click", allClear);
