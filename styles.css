@@ -1,9 +1,12 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    color: white;
     /* padding: 0; */
 }
-
+body {
+    background-color: #000000;
+}
 #calculator {
     display: flex;
     flex-direction: column;
@@ -15,7 +18,7 @@
 .heading {
     display: flex;
     justify-content: center;
-    font-family: serif;
+    font-family: "Playwrite DE Grund", cursive;
     font-size: 100px;
     margin: 0;
     padding: 0;
@@ -27,4 +30,17 @@ button {
     border: none;
     border-radius: 10%;
     margin: 2px;
+    font-size: 25px;
+}
+
+.operator {
+    background-color: #ff9f0a;
+}
+
+.clear {
+    background-color: #5c5c5e;
+}
+
+.numbers {
+    background-color: #2a2a2c;
 }
