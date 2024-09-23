@@ -6,6 +6,10 @@
 }
 body {
     background-color: #000000;
+    height: 100vh;
+    width: 100%;
+    /* overflow-y: hidden; */
+    /* object-fit: contain; */
 }
 #calculator {
     display: flex;
@@ -43,4 +47,15 @@ button {
 
 .numbers {
     background-color: #2a2a2c;
+}
+
+.result {
+    padding: 10px;
+    font-size: 45px;
+    display: flex;
+    /* float: left; */
+    width: 44px;
+    /* align-items: flex-end; */
+    /* text-align: right; */
+    /* border: 10px white dashed; */
 }
