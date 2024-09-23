@@ -30,7 +30,7 @@ function operate(num1, num2, operator) {
             output = divide(num1, num2);
             break;
     }
-    console.log(output);
+    return output;
 }
 
 function showOperation(e) {
@@ -62,8 +62,9 @@ function resultEvaluation(e) {
             break;
         }
     }
-    console.log(listedData);
-    operate(...listedData);
+    // console.log(listedData);
+    let evaluatedResult = operate(...listedData);
+    resultBox.textContent = evaluatedResult;
 }
 
 const evaluator = document.querySelector(".result-calculation");
