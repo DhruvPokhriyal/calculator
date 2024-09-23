@@ -4,9 +4,27 @@
     /* padding: 0; */
 }
 
-body {
+#calculator {
     display: flex;
+    flex-direction: column;
     height: 100vh;
     justify-content: center;
     align-items: center;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    font-family: serif;
+    font-size: 100px;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    height: 100px;
+    width: 100px;
+    border: none;
+    border-radius: 10%;
+    margin: 2px;
 }
