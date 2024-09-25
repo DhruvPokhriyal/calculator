@@ -65,8 +65,18 @@ button {
     margin-bottom: 10px;
 }
 
-.result-calculation {
+/* .result-calculation {
     background-color: #ff9f0a;
-    width: 100%;
+    width: 50%;
     border-radius: 9px;
+} */
+
+.others {
+    background-color: #ff9f0a;
+    width: 50%;
+    border-radius: 9px;
+}
+
+.layer5 {
+    display: flex;
 }
