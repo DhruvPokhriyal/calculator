@@ -37,7 +37,8 @@ button {
     font-size: 25px;
 }
 
-.operator {
+.operator,
+#decimal {
     background-color: #ff9f0a;
 }
 
