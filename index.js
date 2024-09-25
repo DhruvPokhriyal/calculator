@@ -106,3 +106,63 @@ evaluator.addEventListener("click", resultEvaluation);
 
 const ac = document.querySelector(".clear");
 ac.addEventListener("click", allClear);
+
+document.addEventListener("keydown", (e) => {
+    console.log(e.key);
+    switch (e.key) {
+        case "0":
+            document.querySelector(".num0").click();
+            break;
+        case "1":
+            document.querySelector(".num1").click();
+            break;
+        case "2":
+            document.querySelector(".num2").click();
+            break;
+        case "3":
+            document.querySelector(".num3").click();
+            break;
+        case "4":
+            document.querySelector(".num4").click();
+            break;
+        case "5":
+            document.querySelector(".num5").click();
+            break;
+        case "6":
+            document.querySelector(".num6").click();
+            break;
+        case "7":
+            document.querySelector(".num7").click();
+            break;
+        case "8":
+            document.querySelector(".num8").click();
+            break;
+        case "9":
+            document.querySelector(".num9").click();
+            break;
+        case "+":
+            document.querySelector(".plus").click();
+            break;
+        case "-":
+            document.querySelector(".minus").click();
+            break;
+        case "*":
+            document.querySelector(".multiply").click();
+            break;
+        case "/":
+            document.querySelector(".divide").click();
+            break;
+        case "Backspace":
+            document.querySelector(".backspace").click();
+            break;
+        case "Enter":
+            document.querySelector(".result-calculation").click();
+            break;
+        case "c":
+            document.querySelector(".clear").click();
+            break;
+        case ".":
+            document.querySelector(".decimal").click();
+            break;
+    }
+});
