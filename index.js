@@ -3,19 +3,22 @@ let numString = "";
 let OPERATOR_STRING = "+-*/";
 
 function sum(num1, num2) {
-    return Math.round(Number(num1) + Number(num2), 2);
+    return (Number(num1) + Number(num2)).toFixed(2);
 }
 
 function subtract(num1, num2) {
-    return Math.round(Number(num1) - Number(num2), 2);
+    return (Number(num1) - Number(num2)).toFixed(2);
 }
 
 function multiply(num1, num2) {
-    return Math.round(Number(num1) * Number(num2), 2);
+    return (Number(num1) * Number(num2)).toFixed(2);
 }
 
 function divide(num1, num2) {
-    return Math.round(Number(num1) / Number(num2), 2);
+    if (num2 == 0) {
+        return "Idiot";
+    }
+    return (Number(num1) / Number(num2)).toFixed(2);
 }
 
 function operate(num1, operator, num2) {
