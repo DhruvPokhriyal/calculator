@@ -66,4 +66,6 @@ button {
 
 .result-calculation {
     background-color: #ff9f0a;
+    width: 100%;
+    border-radius: 9px;
 }
