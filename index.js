@@ -13,22 +13,22 @@ backspace.addEventListener("click", () => {
 });
 
 function sum(num1, num2) {
-    return (Number(num1) + Number(num2)).toFixed(2);
+    return (Number(num1) + Number(num2)).toFixed(6);
 }
 
 function subtract(num1, num2) {
-    return (Number(num1) - Number(num2)).toFixed(2);
+    return (Number(num1) - Number(num2)).toFixed(6);
 }
 
 function multiply(num1, num2) {
-    return (Number(num1) * Number(num2)).toFixed(2);
+    return (Number(num1) * Number(num2)).toFixed(6);
 }
 
 function divide(num1, num2) {
     if (num2 == 0) {
         return "Idiot";
     }
-    return (Number(num1) / Number(num2)).toFixed(2);
+    return (Number(num1) / Number(num2)).toFixed(6);
 }
 
 function operate(num1, operator, num2) {
