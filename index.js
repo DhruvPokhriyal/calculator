@@ -2,8 +2,15 @@ let history = [];
 let numString = "";
 let OPERATOR_STRING = "+-*/";
 const decimal = document.querySelector("#decimal");
-
 decimal.addEventListener("click", showOperation);
+const backspace = document.querySelector(".backspace");
+backspace.addEventListener("click", () => {
+    const resultBox = document.querySelector(".numeric-result");
+    const content = resultBox.textContent;
+    numString = numString.slice(0, numString.length - 1);
+    resultBox.textContent = content.slice(0, content.length - 1);
+    history.push();
+});
 
 function sum(num1, num2) {
     return (Number(num1) + Number(num2)).toFixed(2);
