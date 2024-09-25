@@ -1,6 +1,9 @@
 let history = [];
 let numString = "";
 let OPERATOR_STRING = "+-*/";
+const decimal = document.querySelector("#decimal");
+
+decimal.addEventListener("click", showOperation);
 
 function sum(num1, num2) {
     return (Number(num1) + Number(num2)).toFixed(2);
@@ -43,11 +46,15 @@ function showOperation(e) {
         if (numString) {
             history.push(numString);
             numString = "";
+            decimal.addEventListener("click", showOperation);
         }
         history.push(buttonClicked);
     } else {
         // If a number is clicked, append it to numString
         numString += buttonClicked;
+        if (e.target.textContent == ".") {
+            decimal.removeEventListener("click", showOperation);
+        }
     }
 
     // Display the current clicked button
